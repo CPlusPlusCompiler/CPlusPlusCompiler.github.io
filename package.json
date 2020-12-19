@@ -2,7 +2,7 @@
   "name": "portfolio-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cpluspluscompiler.github.io/",
+  "homepage": "https://cpluspluscompiler.github.io/CPlusPlusCompiler.github.io",
   "dependencies": {
     "@material-ui/core": "^4.11.1",
     "@material-ui/icons": "^4.11.2",
