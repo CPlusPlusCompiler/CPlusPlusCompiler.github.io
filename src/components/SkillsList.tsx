@@ -6,8 +6,8 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
             width: '100%',
-            backgroundColor: '#340152',
-            maxWidth: 480,
+            backgroundColor: '#34015270',
+            maxWidth: 600,
         },
         listItems: {
             width: '100%',
@@ -32,56 +32,66 @@ function SkillsList() {
             className={classes.root}
         >
             <div className={classes.listItems}>
-                {SkillsListItem("Programming languages",
-                    [
-                        "Kotlin",
-                        "Java",
-                        "C++",
-                        "C#",
-                        "TypeScript",
-                    ]
-                )}
+                {
+                    SkillsListItem("Programming languages",
+                        [
+                            "Kotlin",
+                            "Java",
+                            "C++",
+                            "C#",
+                            "TypeScript",
+                        ]
+                    )
+                }
 
-                {SkillsListItem("Markup languages",
-                    [
-                        "Xml",
-                        "Html",
-                        "CSS",
-                        "Gradle",
-                        "MD",
-                    ]
-                )}
+                {
+                    SkillsListItem("Markup languages",
+                        [
+                            "Xml",
+                            "Html",
+                            "CSS",
+                            "Gradle",
+                            "MD",
+                        ]
+                    )
+                }
 
-                {SkillsListItem("Architectural pattern",
-                    [
-                        "MVVM"
-                    ]
-                )}
+                {
+                    SkillsListItem("Architectural pattern",
+                        [
+                            "MVVM"
+                        ]
+                    )
+                }
 
-                {SkillsListItem("Frameworks / API / tools",
-                    [
-                        "Qt QML, Widgets",
-                        "Android SDK",
-                        "Rest API",
-                        ".Net Core",
-                        "Git",
-                        "Windows API",
-                        "Network sockets",
-                        "Linux",
-                    ]
-                )}
+                {
+                    SkillsListItem("Frameworks / API / tools",
+                        [
+                            "Qt QML, Widgets",
+                            "Android SDK",
+                            "Rest API",
+                            ".Net Core",
+                            "Git",
+                            "Windows API",
+                            "Network sockets",
+                            "Linux",
+                        ]
+                    )
+                }
 
-                {SkillsListItem("Android related",
-                    [
-                        "Room",
-                        "Realm",
-                        "LiveData",
-                        "Jetpack navigation",
-                        "Lifecycles",
-                        "Hilt",
-                        "Material design",
-                    ]
-                )}
+                {
+                    SkillsListItem("Android related",
+                        [
+                            "Room",
+                            "Realm",
+                            "LiveData",
+                            "Jetpack navigation",
+                            "Lifecycles",
+                            "Hilt",
+                            "Material design",
+                        ]
+                    )
+                }
             </div>
 
         </List>

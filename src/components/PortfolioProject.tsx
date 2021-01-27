@@ -22,13 +22,15 @@ const useStyles = makeStyles((theme: Theme) =>
             flexGrow: 1,
             display: 'flex',
             // minWidth: '40vw',
-            maxWidth: '480px',
+            width: '100%',
+            maxWidth: '300px',
+            flexWrap: 'wrap'
         },
         appPicture: {
             alignSelf: 'center',
             justifySelf: 'center',
-            width: 200,
-            maxWidth: '50%',
+            width: 400,
+            maxWidth: '70%',
             flexShrink: 'revert',
             // height: 151,
             minWidth: '10%',

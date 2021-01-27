@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
             // flexGrow: 1,
-            minWidth: '40%'
+            minWidth: '40%',
         }
     })
 )
@@ -21,7 +21,7 @@ function RepositoryList(repos: RepositoryResponse[]) {
             <List className={classes.root}>
                 {
                     repos.map(item => {
-                        if (!item.fork) {
+                        if (!item.fork && item.errorMessage == null) {
                             return <PortfolioProject
                                 key={item.id}
                                 id={item.id}
@@ -30,6 +30,15 @@ function RepositoryList(repos: RepositoryResponse[]) {
                                 html_url={item.html_url}
                                 releases_url={item.releases_url}
                             />
+                        }
+                        else if (item.errorMessage != null) {
+                            return (
+                                <p>
+                                    <h3>Oops, an error ocurred!</h3>
+                                    <p>{item.errorMessage}</p>
+                                </p>
+                            )
+
                         }
                         else
                             return <div></div>

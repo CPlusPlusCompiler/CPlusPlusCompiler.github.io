@@ -1,3 +1,17 @@
+import { Description } from "@material-ui/icons";
+
+export function errorResponse(errorMessage: string): RepositoryResponse {
+    return {
+        id: -1,
+        html_url: "",
+        name: "",
+        fork: false,
+        releases_url: "",
+        description: null,
+        errorMessage: errorMessage
+    }
+}
+
 export interface RepositoryResponse {
     id: number,
     name: string,
@@ -5,6 +19,8 @@ export interface RepositoryResponse {
     html_url: string,
     fork: boolean,
     releases_url: string,
+    errorMessage: string | null
+
 }
 
 

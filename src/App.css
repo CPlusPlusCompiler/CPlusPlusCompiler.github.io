@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /* background-image: url("images/blue-lights-matrix-background-vector.png"); */
 }
 
 .App-logo {
@@ -13,9 +14,16 @@
   }
 }
 
+.Plain-text {
+  max-width: 480px;
+}
+
+
 body {
   background-color: #1f072c;
   color:white;
+  align-items: center;
+  align-content: center;
 }
 
 .PortfolioProject{
@@ -27,22 +35,33 @@ body {
   display: flex;
 }
 
-.App-header {
-  background-color: #340152;
+.Section-projects{
+  margin-top: 128px;
+}
+
+.Section-skills {
+  background-color: #34015270;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-footer {
+.Section-about {
   background-color: #340152;
   color: white;
   padding: 16px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 128px;
+}
+
+.Section-about-text {
   text-align: justify;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .App-link {
